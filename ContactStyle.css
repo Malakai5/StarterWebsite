@@ -1,0 +1,10 @@
+table, th, td {
+    size: 1px;
+    border: 0 !important;
+}
+body {
+    background: darkgreen;
+}
+
+
+

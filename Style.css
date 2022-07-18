@@ -1,0 +1,79 @@
+table, th, td {
+    size: 2px;
+    border: 1px solid black;
+}
+
+
+.pictureTable {
+    border: 0px;
+}
+
+body {
+    background: darkgreen;
+}
+
+.header {
+    background-color: #e7a852;
+    position: fixed;
+    z-index: 1;
+    color: black;
+    height: 75px;
+    width: 100%;
+}
+
+.fixedBox {
+    position: absolute;
+    float: left;
+    top: 200px;
+    left: 70%;
+    background: forestgreen;
+    border-color: goldenrod;
+    border-width: 6px;
+    border-style: groove;
+    padding: 10px;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+}
+
+.leftPanel{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 210px;
+    width: 150px;
+    padding: 8px;
+    background-color: #e7a852;
+    min-height: 100%;
+}
+
+.middlePanel{
+    z-index: 0;
+    resize: both;
+    overflow: auto;
+    margin-left: 170px;
+    margin-right: 180px;
+    margin-top: 210px;
+    color: forestgreen;
+    border-style: solid;
+    padding: 10px;
+    min-height: 100%;
+}
+
+.rightPanel{
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 210px;
+    width: 150px;
+    padding: 8px;
+    background-color: #e7a852;
+    min-height: 100%;
+}
+
+.bodyPanel{
+    position: absolute;
+    left: 0;
+    max-width: 1200px;
+    min-width: 650px;
+}

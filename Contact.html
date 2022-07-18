@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+  <link rel="stylesheet" href="ContactStyle.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<script>
+    function processForm() {
+        var form = document.thisForm;
+        var e = form.fullName.value + "\n" + form.email.value;
+        e = e + "\n\n" + form.subject.value + "\n"
+
+        var p = form.priority.value;
+
+        e = e + p + "\n" + form.message.value
+
+        form.sentMessage.value = e;
+    }
+</script>
+
+<body>
+
+<div class="fixedBox">
+<h2>Thank you for reviewing my resume</h2>
+<br>
+    <b>Phone:</b>813-326-6089<br>
+    <a href="https://www.linkedin.com/in/malik-mandy-a25240178/"><i>www.linkedin.com/in/malik-mandy-a25240178</i></a><br>
+    <a href=secondPage.html><i>Second Page</i></a>
+<h4>Here is my contact email</h4>
+<a href="mailto: mmandy@usf.edu">Working email</a>
+</div>
+<form name="thisForm">
+<table>
+
+    <tr>
+        <th colspan="2">Use this Form to send me a message</th>
+    </tr>
+    <tr>
+        <td>Full name</td> <td><label>
+        <input type="text" size="40" name="fullName">
+    </label></td>
+    </tr>
+    <tr>
+        <td>Email Address</td> <td><label>
+        <input type="text" size="40" name="email">
+    </label></td>
+    </tr>
+    <tr>
+        <td>Subject of message</td> <td><label>
+        <input type="text" size="40" name="subject">
+    </label></td>
+    </tr>
+    <tr>
+        <td>Priority</td>
+
+        <td>
+            <label for="priority"></label><select name="priority" id="priority">
+                <option value="none"> please choose an option</option>
+                <option value="low"> low</option>
+                <option value="medium"> medium</option>
+                <option value="high"> high</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="alignment: top">Message:</td> <td><label>
+        <textarea name="message" rows="4" cols="40"></textarea>
+    </label></td>
+    </tr>
+
+    <tr>
+        <td><input type="reset" value="clear form"></td>
+        <td><input type="button" value="send message" onclick="processForm()"></td>
+    </tr>
+
+    <tr><td><br><br></td></tr>
+
+    <tr>
+        <th>If Your Message is correct it will be displayed below</th>
+    </tr>
+
+    <tr>
+        <td style="alignment: top">Message Sent:</td>
+        <td><label>
+        <textarea name="sentMessage" rows="12" cols="40" readonly></textarea> </label></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
